@@ -3,9 +3,53 @@
 <head>
 	<title>Hello</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-7tY7Dc2Q8WQTKGz2Fa0vC4dWQo07N4mJjKvHfIGnxuC4vPqFGFQppd9b3NWpf18/" crossorigin="anonymous">
 </head>
 <body>
-	<h1>Github Acc</h1>
+	
+	<!-- start navigation -->
+<nav class="navbar navbar-default navbar-fixed-top templatemo-nav" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a onclick="redirectHome()" class="navbar-brand hidden-sm hidden-md hidden-xs wow fadeInLeft" data-wow-delay="0.6s" style="font-size: 20px"><?=TITLE?></a>
+			<a onclick="redirectHome()" href="index.php" class="navbar-brand hidden-lg hidden-md wow fadeInLeft" data-wow-delay="0.6s" style="font-size: 20px"><?=TITLE?></a>
+		</div>
+		<style type="text/css">
+			.nav>li{
+				margin-top: 10px;
+
+			}
+			.nav>li>a{
+				display: inline;
+			}
+		</style>
+		<div class="collapse navbar-collapse" style="width: 1100px !important;">
+			<ul class="nav navbar-nav navbar-right text-uppercase">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#feature"><?=FACILITIES?></a></li>
+				<li><a href="#pricing"><?=OURTEAM?></a></li>
+				<li><a href="#download"><?=ACHIEVEMENTS?></a></li>
+				<li><a onclick="redirectPage(1)" ><?=GALLERY?></a></li>
+				<li><a href="#contact"><?=CONTACT?></a></li>
+				<li>
+					<form class="col-sm-4 col-xs-4 col-lg-12 col-md-12" style="margin-top: 5px">
+						<select class="form-control" id="language" onchange="myLanguage()">
+							<option value="0"><?=CHOOSELANGUAGE?></option>
+							<option value="1">नेपाली  </option>
+							<option value="2">English</option>
+						</select>						
+					</form>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+		<!-- end navigation -->
 
 </body>
 </html>
