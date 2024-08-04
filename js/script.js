@@ -47,6 +47,7 @@ let myChart = new Chart(wheel, {
   options: {
     //Responsive chart
     responsive: true,
+    borderColor:"#fbf223",
     maintainAspectRatio: true,
     animation: { duration: 10 },
     plugins: {
